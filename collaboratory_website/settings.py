@@ -168,3 +168,7 @@ EMAIL_PORT = 1025
 # CORS_ORIGIN_WHITELIST = serverconfig.CORS_ORIGIN_WHITELIST
 # CSRF_TRUSTED_ORIGINS = serverconfig.CSRF_TRUSTED_ORIGINS
 # CSRF_COOKIE_NAME = "XSRF-TOKEN"
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
