@@ -176,10 +176,10 @@ django_heroku.settings(locals())
 
 # Persistent Connections Heroku
 import dj_database_url
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+#DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
-DATABASES['default'] = dj_database_url.parse('mysql://ywurffr50roni0mc:cb6s5codrfwstftx@u3r5w4ayhxzdrw87.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/g7cki1yc6hqy54a7', conn_max_age=600)
+#DATABASES['default'] = dj_database_url.parse('mysql://ywurffr50roni0mc:cb6s5codrfwstftx@u3r5w4ayhxzdrw87.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/g7cki1yc6hqy54a7', conn_max_age=600)
 
-#DATABASES['default'] = dj_database_url.config(
-#    default='mysql://ywurffr50roni0mc:cb6s5codrfwstftx@u3r5w4ayhxzdrw87.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/g7cki1yc6hqy54a7',
-#)
+DATABASES['default'] = dj_database_url.config(
+    default='mysql://ywurffr50roni0mc:cb6s5codrfwstftx@u3r5w4ayhxzdrw87.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/g7cki1yc6hqy54a7',
+)
